@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Артём Витков](https://up.htmlacademy.ru/htmlcss/35/user/1976751).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Румянцев](https://up.htmlacademy.ru/profession/frontender/15/htmlcss/35/user/1521451).
 
 ---
 
