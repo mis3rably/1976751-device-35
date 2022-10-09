@@ -22,11 +22,17 @@
 	font-display: swap;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "Rubik", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30px;
+	margin: 0;
+	padding: 0;
 }
 
 .main-header {
@@ -40,6 +46,8 @@ body {
 
 .list {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .main-header-navigation-link {
@@ -171,6 +179,9 @@ body {
 
 .subscription-text {
 	color: #444444;
+	width: 560px;
+	margin: 0;
+	margin-left: 252px;
 }
 
 .subscription-form-email-input {
@@ -182,6 +193,9 @@ body {
 
 .subscription-text-free {
 	color: #444444;
+	display: block;
+	width: 160px;
+	margin-left: 188px;
 }
 
 .main-footer {
@@ -204,6 +218,7 @@ body {
 }
 
 .main-footer-phone-number a {
+	font-size: 16px;
 	font-style: normal;
 	color: #ffffff;
 }
@@ -292,4 +307,223 @@ body {
 	font-size: 16px;
 	text-decoration: none;
 	color: #000000;
+}
+.footer-container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.footer-navigation-item-address {
+	width: 239px;
+}
+.footer-navigation-item-links {
+	margin-left: 119px;
+	width: 444px;
+}
+.footer-navigation-item-phone-number {
+	width: 175px;
+	margin-left: 183px;
+}
+.subscription-schedule {
+	width: 348px;
+	margin: 0;
+	padding: 0;
+}
+.subscription-form {
+	width: 810px;
+}
+.subscription-container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.subscription {
+	background-color: #F0F0F0;
+}
+.about {
+	width: 520px;
+}
+.contacts {
+	width: 532px;
+	margin-left: 108px;
+}
+.about-contacts-container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.advantages-container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.nuances {
+	background-color: #F0F0F0;
+}
+.nuances-container {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.nuances-item {
+	margin-left: 116px;
+	width: 452px;
+}
+.nuances-img {
+	display: block;
+	margin-left: 106px;
+}
+.nuances-heading {
+	width: 242px;
+	margin: 0;
+	padding: 0;
+}
+.nuances-text {
+	width: 452px;
+	margin: 0;
+	padding: 0;
+}
+.nuances-list {
+	width: 287px;
+}
+.product-selection {
+	width: 1160px;
+	margin: 0 auto;
+}
+.product-selection-list-item {
+	width: 160px;
+}
+.product-selection-list {
+	display: flex;
+}
+.product-selection-list-item img {
+	display: block;
+}
+.product-selection-list-item:not(:last-child) {
+	margin-right: 40px;
+}
+.product-showcase {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.product-showcase-slider {
+	width: 560px;
+}
+.product-showcase-heading {
+	width: 545px;
+}
+.product-showcase-text {
+	margin: 0;
+	padding: 0;
+	width: 560px;
+}
+.product-showcase-features {
+	width: 307px;
+}
+.product-showcase-item {
+	width: 560px;
+	margin-left: 40px;
+}
+.main-header {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.main-header-logo img {
+	display: block;
+}
+.main-header-navigation-list {
+	display: flex;
+	justify-content: space-between;
+}
+.main-header-container {
+	padding: 0 40px;
+}
+.main-header-navigation-item:nth-child(2) {
+	margin: 0 26px;
+	width: 231px;
+}
+.main-header-navigation-item:last-child {
+	margin-left: 33px;
+}
+.navigation-search-form {
+	width: 517px;
+}
+.main-header-page-navigation-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+.main-header-page-navigation-item:not(:first-child) {
+	margin-left: 45px;
+	width: 127px;
+}
+.main-header-page-navigation-item:first-child {
+	margin-right: 276px;
+	width: 293px;
+}
+.main-header-navigation-item:nth-child(3) {
+	width: 105px;
+}
+.main-header-navigation-item:nth-child(4) {
+	width: 99px;
+}
+.subscription-item-text, .subscription-item-form {
+	display: flex;
+}
+.inner-navigation {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 40px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.inner-header {
+	margin: 0;
+	padding: 0;
+}
+.breadcrumbs {
+	display: flex;
+}
+.log-out {
+	width: 56px;
+	height: 30px;
+	color: #000000;
+	opacity: 0.3;
+}
+.catalog-products {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+}
+.filter-container {
+	box-sizing: border-box;
+	width: 320px;
+	padding: 0 40px;
+}
+.catalog-container {
+	box-sizing: border-box;
+	width: 840px;
+	padding: 0 40px;
+}
+.sort-container {
+	display: flex;
+	background-color: #F0F0F0;
+}
+.product-card-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product-card:nth-child(2n) {
+	margin-left: 40px;
+}
+.product-card {
+	width: 360px;
+}
+.pagination {
+	display: flex;
 }
