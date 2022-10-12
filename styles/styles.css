@@ -758,3 +758,6 @@ body {
 .pagination-current {
 	color: #444444; opacity: 0.6;
 }
+.main-header-container {
+	min-width: 1160px;
+}
