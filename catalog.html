@@ -12,25 +12,21 @@
 
    <body>
       <div class="main-container">
-         <header class="main-header flex">
-            <div class="main-header-container">
-               <div class="main-header-logo">
-                  <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
-                  <a href="index.html" class="main-header-logo-link">
-                     <img src="images/logos/header-logo.svg" width="145" height="36" alt="Логотип «Девайс».">
-                  </a>
-               </div>
+         <header class="main-header">
+            <div class="header-container">
+               <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
+               <a href="#" class="main-header-logo-link">
+                  <img src="images/logos/header-logo.svg" width="145" height="36" alt="Логотип «Девайс».">
+               </a>
+               <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input type="text" name="search-form" placeholder="Поиск">
+                  <button class="search-button" type="submit">Найти</button>
+               </form>
                <nav class="main-header-navigation">
                   <ul class="main-header-navigation-list list flex">
-                     <li class="main-header-navigation-item flex">
-                        <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="post">
-                           <input type="text" name="search-form" placeholder="Поиск">
-                           <button class="search-button" type="submit">Найти</button>
-                        </form>
-                     </li>
-                     <li class="main-header-navigation-item flex"> <img class="main-header-navigation-link-login-icon"
-                           src="images/login.svg" alt="" width="13" height="12"><a href="#"
-                           class="main-header-navigation-link">Коля Петухов</a> <a
+                     <li class="main-header-navigation-item main-header-navigation-item-login flex"> <img
+                           class="main-header-navigation-link-login-icon" src="images/login.svg" alt="" width="13"
+                           height="12"><a href="#" class="main-header-navigation-link">Коля Петухов</a> <a
                            class="main-header-navigation-link log-out">Выйти</a></li>
                      <li class="main-header-navigation-item flex"> <img
                            class="main-header-navigation-link-login-compare-icon" src="images/compare.svg" alt=""
@@ -41,9 +37,12 @@
                      </li>
                   </ul>
                </nav>
+               <div class="main-header-navigation-menu-catalog flex">
+                  <a href="catalog.html" class="main-header-page-navigation-link">
+                     Каталог товаров
+                  </a>
+               </div>
                <nav class="main-header-page-navigation flex">
-                  <div class="main-header-page-navigation-item-catalog flex"><a href="catalog.html"
-                        class="main-header-page-navigation-link">Каталог товаров</a></div>
                   <ul class="main-header-page-navigation-list flex">
                      <li class="main-header-page-navigation-item"><a href="#"
                            class="main-header-page-navigation-link">Доставка</a></li>
@@ -223,23 +222,21 @@
             </section>
          </main>
          <footer class="main-footer">
-            <div class="footer-container flex">
-               <a href="index.html" class="main-footer-logo-link">
-                  <img src="images/logos/footer-logo.svg" alt="Логотип сайта в подвале страницы." class="footer-logo"
-                     width="145" height="36">
-               </a>
-               <nav class="footer-navigation-address-links flex">
-                  <address class="main-footer-address">Санкт-Петербург, набережная
-                     реки Карповки, 5, литера П.
-                  </address>
+            <div class="footer-container">
+               <img src="images/logos/footer-logo.svg" alt="Логотип сайта в подвале страницы." class="footer-logo"
+                  width="145" height="36">
+               <address class="main-footer-address">Санкт-Петербург, набережная
+                  реки Карповки, 5, литера П.
+               </address>
+               <nav class="footer-navigation-address-links">
                   <ul class="main-footer-list list flex">
                      <li class="main-footer-list-item">Доставка</li>
                      <li class="main-footer-list-item">Гарантия</li>
                      <li class="main-footer-list-item">Контакты</li>
                   </ul>
-                  <address class="main-footer-phone-number"><a href="tel:+78128121212">Тел,: +7 (812) 812-12-12</a>
-                  </address>
                </nav>
+               <address class="main-footer-phone-number"><a href="tel:+78128121212">Тел,: +7 (812) 812-12-12</a>
+               </address>
                <nav class="main-footer-social-links flex">
                   <ul class="social-links-list list flex">
                      <li class="social-links-list-item flex">
@@ -258,9 +255,9 @@
                               class="social-links-list-item-img" width="15" height="14"></a>
                      </li>
                   </ul>
-                  <a href="https://htmlacademy.ru/" class="htmlacademy-logo-link"><img class="htmlacademy-logo"
-                        src="images/logos/htmlacademy-logo.svg" alt="Логотип HTMLAcademy." width="115" height="33"></a>
                </nav>
+               <a href="https://htmlacademy.ru/" class="htmlacademy-logo-link"><img class="htmlacademy-logo"
+                     src="images/logos/htmlacademy-logo.svg" alt="Логотип HTMLAcademy." width="115" height="33"></a>
             </div>
          </footer>
       </div>
