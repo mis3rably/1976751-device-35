@@ -56,143 +56,137 @@
         </div>
       </header>
       <main class="main-index">
-        <section class="product-showcase product-showcase-01 flex">
+        <section class="product-slider flex">
           <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
           <ol class="product-showcase-slider list flex">
             <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Предыдущая картинка.</span>
-              <button class="product-showcase-button-prev" name="button"></button>
-            </li>
-            <li class="product-showcase-img-link">
-              <img class="product-showcase-img" src="images/slider-drone.png" width="560" height="560" alt="Фотография товара">
+              <button class="product-showcase-button-prev" name="button" type="button">
+                <span class="visually-hidden">Предыдущая картинка.</span>
+              </button>
             </li>
             <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Следующая картинка.</span>
-              <button class="product-showcase-button-next" name="button"></button>
+              <button class="product-showcase-button-next" name="button" type="button">
+                <span class="visually-hidden">Следующая картинка.</span>
+              </button>
             </li>
           </ol>
-          <section class="product-showcase-item">
-            <h2 class="product-showcase-heading title">Порхает как бабочка, жалит как пчела!</h2>
-            <p class="product-showcase-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="product-showcase-link flex" href="#">Подробнее</a>
-            <div class="product-features">
-              <div class="product-feature-block flex">
-                <span class="product-feature">800 м</span>
-                <span class="product-feature-desc">Дальность полета</span>
+          <section class="product-showcase-01 flex">
+            <img class="product-showcase-img" src="images/slider-drone.png" width="560" height="560" alt="Фотография товара">
+            <section class="product-showcase-item">
+              <h2 class="product-showcase-heading title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="product-showcase-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="product-showcase-link flex" href="#">Подробнее</a>
+              <div class="product-features">
+                <div class="product-feature-block flex">
+                  <span class="product-feature">800 м</span>
+                  <span class="product-feature-desc">Дальность полета</span>
+                </div>
+                <div class="product-feature-block flex">
+                  <span class="product-feature">50 м</span>
+                  <span class="product-feature-desc">Радиус поражения</span>
+                </div>
               </div>
-              <div class="product-feature-block flex">
-                <span class="product-feature">50 м</span>
-                <span class="product-feature-desc">Радиус поражения</span>
-              </div>
-            </div>
-            <span class="showcase-radio"></span>
+            </section>
           </section>
-        </section>
-        <section class="product-showcase product-showcase-02 flex">
-          <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
-          <ol class="product-showcase-slider list flex">
-            <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Предыдущая картинка.</span>
-              <button class="product-showcase-button-prev" name="button"></button>
+          <section class="product-showcase-02 flex">
+            <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
+            <img class="product-showcase-img" src="images/slider-band.png" width="560" height="560" alt="Фотография товара">
+            <section class="product-showcase-item">
+              <h2 class="product-showcase-heading title">Худеем правильно!</h2>
+              <p class="product-showcase-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="product-showcase-link flex" href="#">Подробнее</a>
+              <div class="product-features">
+                <div class="product-feature-block flex">
+                  <span class="product-feature">48 часов</span>
+                  <span class="product-feature-desc">Без подзарядки</span>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="product-showcase-03 flex">
+            <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
+            <img class="product-showcase-img" src="images/slider-stick.png" width="560" height="560" alt="Фотография товара">
+            <section class="product-showcase-item">
+              <h2 class="product-showcase-heading title">Делай селфи, как Бен Стиллер!</h2>
+              <p class="product-showcase-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="product-showcase-link flex" href="#">Подробнее</a>
+              <div class="product-features">
+                <div class="product-feature-block flex">
+                  <span class="product-feature">8,5 м</span>
+                  <span class="product-feature-desc">Длина палки</span>
+                </div>
+                <div class="product-feature-block flex">
+                  <span class="product-feature">5 кг</span>
+                  <span class="product-feature-desc">Вес палки</span>
+                </div>
+                <div class="product-feature-block flex">
+                  <span class="product-feature">Карбон</span>
+                  <span class="product-feature-desc">Материал</span>
+                </div>
+            </section>
+          </section>
+          <ol class="showcase-radio-list flex list">
+            <li class="showcase-radio-list-item">
+              <input class="showcase-input" type="radio" name="showcase-group" value="true" checked>
             </li>
-            <li class="product-showcase-img-link">
-              <img class="product-showcase-img" src="images/slider-band.png" width="560" height="560" alt="Фотография товара">
+            <li class="showcase-radio-list-item">
+              <input class="showcase-input" type="radio" name="showcase-group" value="false">
             </li>
-            <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Следующая картинка.</span>
-              <button class="product-showcase-button-next" name="button"></button>
+            <li class="showcase-radio-list-item">
+              <input class="showcase-input" type="radio" name="showcase-group" value="false">
             </li>
           </ol>
-          <section class="product-showcase-item">
-            <h2 class="product-showcase-heading title">Худеем правильно!</h2>
-            <p class="product-showcase-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="product-showcase-link flex" href="#">Подробнее</a>
-            <div class="product-features">
-              <div class="product-feature-block flex">
-                <span class="product-feature">48 часов</span>
-                <span class="product-feature-desc">Без подзарядки</span>
-              </div>
-            </div>
-            <span class="showcase-radio"></span>
-          </section>
-        </section>
-        <section class="product-showcase product-showcase-03 flex">
-          <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
-          <ol class="product-showcase-slider list flex">
-            <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Предыдущая картинка.</span>
-              <button class="product-showcase-button-prev" name="button"></button>
-            </li>
-            <li class="product-showcase-img-link">
-              <img class="product-showcase-img" src="images/slider-stick.png" width="560" height="560" alt="Фотография товара">
-            </li>
-            <li class="product-showcase-img-button-link">
-              <span class="visually-hidden">Следующая картинка.</span>
-              <button class="product-showcase-button-next" name="button"></button>
-            </li>
-          </ol>
-          <section class="product-showcase-item">
-            <h2 class="product-showcase-heading title">Делай селфи, как Бен Стиллер!</h2>
-            <p class="product-showcase-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a class="product-showcase-link flex" href="#">Подробнее</a>
-            <div class="product-features">
-              <div class="product-feature-block flex">
-                <span class="product-feature">8,5 м</span>
-                <span class="product-feature-desc">Длина палки</span>
-              </div>
-              <div class="product-feature-block flex">
-                <span class="product-feature">5 кг</span>
-                <span class="product-feature-desc">Вес палки</span>
-              </div>
-              <div class="product-feature-block flex">
-                <span class="product-feature">Карбон</span>
-                <span class="product-feature-desc">Материал</span>
-              </div>
-            </div>
-            <span class="showcase-radio"></span>
-          </section>
         </section>
         <section class="product-selection">
           <h2 class="visually-hidden">Перечень товаров.</h2>
           <ul class="product-selection-list list">
             <li class="product-selection-list-item">
               <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/virtual-reality-glasses.svg" alt="Шлем виртуальной реальности." class="product-selection-list-image" width="97" height="55">
-              </a>
-              <a href="#" class="product-selection-list-text-link">Виртуальная реальность</a>
-            </li>
-            <li class="product-selection-list-item">
-              <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/selfie-monopod.svg" alt="Монопод для селфи." class="product-selection-list-image" width="86" height="117">
-              </a>
-              <a href="#" class="product-selection-list-text-link">
-                Моноподы <br>
-                для селфи
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/virtual-reality-glasses.svg" alt="Шлем виртуальной реальности." class="product-selection-list-image" width="97" height="55">
+                </div>
+                <span class="product-selection-list-text-link">Виртуальная реальность</span>
               </a>
             </li>
             <li class="product-selection-list-item">
               <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/action-camera.svg" alt="Экшн-камера." class="product-selection-list-image" width="71" height="87">
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/selfie-monopod.svg" alt="Монопод для селфи." class="product-selection-list-image" width="86" height="117">
+                </div>
+                <span class="product-selection-list-text-link">Моноподы<br>для селфи</span>
               </a>
-              <a href="#" class="product-selection-list-text-link">Экшн-камеры</a>
             </li>
             <li class="product-selection-list-item">
               <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/fitness-bracelet.svg" alt="Фитнес-браслет." class="product-selection-list-image" width="107" height="65">
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/action-camera.svg" alt="Экшн-камера." class="product-selection-list-image" width="71" height="87">
+                </div>
+                <span class="product-selection-list-text-link">Экшн-камеры</span>
               </a>
-              <a href="#" class="product-selection-list-text-link">Фитнес-браслеты</a>
             </li>
             <li class="product-selection-list-item">
               <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/smart-watch.svg" alt="Умные часы." class="product-selection-list-image" width="56" height="98">
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/fitness-bracelet.svg" alt="Фитнес-браслет." class="product-selection-list-image" width="107" height="65">
+                </div>
+                <span class="product-selection-list-text-link">Фитнес-браслеты</span>
               </a>
-              <a href="#" class="product-selection-list-text-link">Умные часы</a>
             </li>
             <li class="product-selection-list-item">
               <a href="#" class="product-selection-list-image-link flex">
-                <img src="images/product-examples/quadrocopter.svg" alt="Квадрокоптер." class="product-selection-list-image" width="132" height="69">
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/smart-watch.svg" alt="Умные часы." class="product-selection-list-image" width="56" height="98">
+                </div>
+                <span class="product-selection-list-text-link">Умные часы</span>
               </a>
-              <a href="#" class="product-selection-list-text-link">Квадрокоптеры</a>
+            </li>
+            <li class="product-selection-list-item">
+              <a href="#" class="product-selection-list-image-link flex">
+                <div class="product-selection-list-image-wrapper flex">
+                  <img src="images/product-examples/quadrocopter.svg" alt="Квадрокоптер." class="product-selection-list-image" width="132" height="69">
+                </div>
+                <span class="product-selection-list-text-link">Квадрокоптеры</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -215,11 +209,6 @@
         </section>
         <section class="nuances nuances-slider-2">
           <div class="nuances-container flex">
-            <div class="nuances-controls-container flex">
-              <button class="nuances-controls" type="button">Доставка</button>
-              <button class="nuances-controls" type="button">Гарантия</button>
-              <button class="nuances-controls" type="button">Кредит</button>
-            </div>
             <div class="nuances-item">
               <h2 class="nuances-heading title">Гарантия</h2>
               <p class="nuances-text">
@@ -231,11 +220,6 @@
         </section>
         <section class="nuances nuances-slider-3">
           <div class="nuances-container flex">
-            <div class="nuances-controls-container flex">
-              <button class="nuances-controls" type="button">Доставка</button>
-              <button class="nuances-controls" type="button">Гарантия</button>
-              <button class="nuances-controls" type="button">Кредит</button>
-            </div>
             <div class="nuances-item">
               <h2 class="nuances-heading title">Кредит</h2>
               <p class="nuances-text">
@@ -265,14 +249,14 @@
             <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul class="about-list">
               <li class="about-list-item">
-               <strong>Меловые линии</strong>
+                <strong>Меловые линии</strong>
+              </li>
+              <li class="about-list-item">
+                <strong>СДИК</strong>
                </li>
               <li class="about-list-item">
-               <strong>СДИК</strong>
-               </li>
-              <li class="about-list-item">
-               <strong>ТоксБерри</strong>
-               </li>
+                <strong>ТоксБерри</strong>
+              </li>
             </ul>
             <div class="about-link-container flex">
               <a class="about-link" href="#">Подробнее о нас</a>
@@ -329,7 +313,6 @@
             </ul>
           </nav>
           <address class="main-footer-phone-number"><a href="tel:+78128121212">Тел,: +7 (812) 812-12-12</a></address>
-          <nav class="main-footer-social-links flex">
             <ul class="social-links-list list flex">
               <li class="social-links-list-item flex">
                 <a href="https://t.me/htmlacademy" class="social-links-list-item-link">
@@ -347,7 +330,6 @@
                </a>
               </li>
             </ul>
-          </nav>
           <a href="https://htmlacademy.ru/" class="htmlacademy-logo-link flex">
             <img class="htmlacademy-logo" src="images/logos/htmlacademy-logo.svg" alt="Логотип HTMLAcademy." width="115" height="33">
          </a>

@@ -433,6 +433,7 @@ body {
 .nuances-container {
 	width: 1160px;
 	margin: 0 auto;
+	justify-content: flex-end;
 }
 
 .nuances-controls-container {
@@ -499,10 +500,12 @@ body {
 	display: block;
 }
 
-.product-showcase {
+.product-slider {
 	width: 1160px;
 	margin: 0 auto;
 	background-image: linear-gradient(180deg, #FFE17F 136px, #fff 113px);
+	flex-wrap: wrap;
+	justify-self: center;
 }
 
 .product-showcase-slider {
@@ -688,10 +691,15 @@ body {
 }
 
 .product-selection-list-image-link {
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.product-selection-list-image-wrapper {
 	width: 160px;
 	height: 160px;
 	background-color: #FFE17F;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -771,6 +779,11 @@ body {
 	width: 150px;
 	gap: 15px;
 	flex-wrap: wrap;
+	grid-column: 2 / 3;
+	justify-content: space-around;
+	justify-self: center;
+	min-height: 65px;
+	align-items: center;
 }
 
 .htmlacademy-logo-link {
@@ -782,14 +795,6 @@ body {
 	align-items: center;
 	grid-column: 2 / 3;
 	align-self: start;
-}
-
-.main-footer-social-links {
-	grid-column: 2 / 3;
-	justify-content: space-around;
-	align-self: end;
-	min-height: 65px;
-	align-items: center;
 }
 
 .about-link-container,
@@ -911,4 +916,12 @@ body {
 }
 .catalog-header {
 	padding-bottom: 22px;
+}
+.showcase-radio-list {
+	align-items: center;
+	gap: 20px;
+	margin: 0 auto;
+}
+.product-slider {
+	flex-direction: column;
 }
