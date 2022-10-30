@@ -727,7 +727,15 @@ body {
   display: flex;
 }
 
-.product-card-link:focus-visible {
+.product-card:focus-within {
+  outline: 2px solid #af4fff;
+}
+
+.search-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.navigation-search-form-input:focus-within {
   outline: 2px solid #af4fff;
 }
 
