@@ -2339,3 +2339,17 @@ body {
 .popover:hover {
   display: block;
 }
+
+.new-icon {
+  position: relative;
+}
+
+.new-icon::after {
+  content: "";
+  background-image: url("../images/catalog-new-icon.svg");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
