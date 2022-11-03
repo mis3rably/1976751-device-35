@@ -17,9 +17,10 @@
           <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
           <a href="#" class="main-header-logo-link state-default">
             <img src="images/logos/header-logo.svg" width="145" height="36" alt="Логотип «Девайс».">
+            <span class="visually-hidden">Поиск по сайту.</span>
           </a>
-          <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск">
+          <form class="navigation-search-form flex" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="main-header-navigation-list list flex">
@@ -29,7 +30,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z"
-                    fill="#000">
+                    fill="#000" />
                 </svg>
                 Войти
               </a>
@@ -38,40 +39,99 @@
               <a href="#" class="main-header-navigation-link state-default flex">
                 <svg class="main-header-navigation-link-login-compare-icon" width="10" height="12" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000">
+                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/>
                 </svg>
                 Сравнить
               </a>
             </li>
-            <li class="main-header-navigation-item flex">
-              <a href="#" class="main-header-navigation-link state-default flex">
+            <li class="main-header-navigation-item main-header-navigation-item-shopping-cart flex">
+              <a href="#" class="main-header-navigation-link state-default main-header-navigation-item-login-shopping-cart flex">
                 <svg class="main-header-navigation-link-login-shopping-list-icon" width="16" height="14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                    fill="#000">
+                    fill="#000"/>
                 </svg>
                 Корзина
                 <span class="cart-amount">2</span>
               </a>
+              <div class="popover popover-hidden">
+                <div class="popover-cart-item flex">
+                  <a href="#" class="popover-cart-item-link flex state-default">
+                    <img class="popover-cart-item-img" src="images/products/product-amateur.jpg" alt="Товар Любительская селфи-палка.">
+                        Любительская<br>селфи-палка
+                  </a>
+                  <button class="popover-cart-item-close-button state-default">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-item flex">
+                  <a href="#" class="popover-cart-item-link flex state-default">
+                    <img class="popover-cart-item-img" src="images/products/product-professional.jpg" alt="Профессиональная селфи-палка.">
+                      Профессиональная селфи-палка
+                  </a>
+                  <button class="popover-cart-item-close-button state-default">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-price flex">
+                  <p class="popover-cart-price-item">
+                    Товаров: <span class="popover-cart-price-amount">2</span>
+                  </p>
+                  <p class="popover-cart-price-item">
+                    Сумма: <span class="popover-cart-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <div class="popover-open-cart">
+                  <button type="button" class="popover-open-cart-button">Открыть корзину</button>
+                </div>
+              </div>
+
             </li>
           </ul>
           <div class="main-header-page-navigation-menu flex">
-            <a href="catalog.html" class="main-header-page-navigation-button-link state-default flex">Каталог товаров</a>
-            <button class="main-header-page-navigation-button state-default" type="button">
-              <h2 class="visually-hidden">Открыть меню каталога.</h2>
-              <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity=".3" cx="25" cy="25.8" r="24" stroke="#000" stroke-width="2" />
-                <g opacity=".3" clip-path="url(#a)">
-                  <path d="M33 24.8h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" transform="translate(17 17.8)" d="M0 0h16v16H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+            <a href="catalog.html" class="main-header-page-navigation-button-link state-default flex">Каталог
+              товаров
+              <svg class="main-header-page-navigation-button-icon" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.8" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.8h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17.8h16v16H17z"/></clipPath></defs></svg>
+            </a>
+              <div class="main-header-page-navigation-menu-lists flex">
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item-link-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Моноподы для cелфи
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Фитнес-браслеты
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Умные часы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Квадрокоптеры
+                    </a>
+                  </li>
+                </ul>
+            </div>
           </div>
           <ul class="main-header-page-navigation-list flex">
             <li class="main-header-page-navigation-item flex">
@@ -104,7 +164,7 @@
           <section class="product-showcase-slider-item flex">
             <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
             <img class="product-showcase-img" src="images/slider-drone.png" width="560" height="560"
-              alt="Фотография товара">
+              alt="Фотография товара.">
             <section class="product-showcase-item">
               <h2 class="product-showcase-heading title">Порхает как бабочка, жалит как пчела!</h2>
               <p class="product-showcase-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -125,7 +185,7 @@
           <section class="product-showcase-slider-item flex">
             <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
             <img class="product-showcase-img" src="images/slider-band.png" width="560" height="560"
-              alt="Фотография товара">
+              alt="Фотография товара.">
             <section class="product-showcase-item">
               <h2 class="product-showcase-heading title">Худеем правильно!</h2>
               <p class="product-showcase-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
@@ -142,7 +202,7 @@
           <section class="product-showcase-slider-item flex">
             <h2 class="visually-hidden">Слайдер с демонстрацией товара и его описанием.</h2>
             <img class="product-showcase-img" src="images/slider-stick.png" width="560" height="560"
-              alt="Фотография товара">
+              alt="Фотография товара.">
             <section class="product-showcase-item">
               <h2 class="product-showcase-heading title">Делай селфи, как Бен Стиллер!</h2>
               <p class="product-showcase-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
@@ -167,13 +227,19 @@
           </section>
           <ol class="showcase-radio-list flex list">
             <li class="showcase-radio-list-item">
-              <input class="showcase-input state-default" type="radio" name="showcase-group" value="true" checked>
+              <button type="button" class="showcase-control-current state-default">
+                <span class="visually-hidden">Слайдер 1.</span>
+              </button>
             </li>
             <li class="showcase-radio-list-item">
-              <input class="showcase-input state-default" type="radio" name="showcase-group" value="false">
+              <button type="button" class="showcase-control state-default">
+                <span class="visually-hidden">Слайдер 2.</span>
+              </button>
             </li>
             <li class="showcase-radio-list-item">
-              <input class="showcase-input state-default" type="radio" name="showcase-group" value="false">
+              <button type="button" class="showcase-control state-default">
+                <span class="visually-hidden">Слайдер 3.</span>
+              </button>
             </li>
           </ol>
         </section>
@@ -285,7 +351,7 @@
             <div class="advantages-logo-info-container flex">
               <svg class="advantages-logo-info" width="4" height="12" viewBox="0 0 4 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z" fill="#000">
+                <path d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z" fill="#000"/>
               </svg>
             </div>
           </a>
@@ -338,7 +404,7 @@
                 распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             </div>
             <div class="subscription-item-form flex">
-              <form action="https://echo.htmlacademy.ru/" method="post" class="subscription-form">
+              <form action="https://echo.htmlacademy.ru/" method="post" class="subscription-form flex">
                 <input class="subscription-form-email-input" type="email" name="email" placeholder="Ваш e-mail">
                 <button class="subscription-button" type="submit">Подписаться</button>
               </form>
@@ -375,7 +441,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -386,7 +452,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -396,7 +462,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -405,11 +471,50 @@
             <svg class="htmlacademy-logo" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
-                fill="#FFC700">
+                fill="#FFC700"/>
             </svg>
           </a>
         </div>
       </footer>
+      <div class="modal-container modal-close">
+          <section class="modal-content flex">
+            <h2 class="modal-heading">Доставка под заказ</h2>
+            <button class="modal-button-close state-default">
+              <span class="visually-hidden">Закрыть модальное окно.</span>
+            </button>
+            <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+              <fieldset class="modal-fieldset fieldset-user flex">
+                <p class="field-group flex">
+                  <label class="modal-label" for="subscribe-user">Ваше имя:</label>
+                  <input type="text" class="modal-input modal-input-user" id="subscribe-user" placeholder="Введите имя">
+                </p>
+                <p class="field-group flex">
+                  <label class="modal-label" for="subscribe-email">Ваш e-mail:</label>
+                  <input type="email" class="modal-input modal-input-email error-border" id="subscribe-email" placeholder="Введите почту">
+                  <span class="modal-input-user-error-text">Забавный у вас адрес</span>
+                </p>
+              </fieldset>
+              <fieldset class="modal-fieldset fieldset-order flex">
+              <p class="field-group flex">
+                <label class="modal-label" for="subscribe-order">Что нужно привезти:</label>
+                <input type="text" class="modal-input modal-input-order" id="subscribe-order" placeholder="В свободной форме">
+              </p>
+              <div class="field-group field-group-tool-tip flex">
+                <label class="modal-label label-tool-tip">Количество:</label>
+                <p class="modal-tool-tip">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </p>
+                <p class="modal-input-number-button-container flex">
+                  <button class="modal-input-number-button input-decrease"></button>
+                  <input type="number" class="modal-input modal-input-number">
+                  <button class="modal-input-number-button input-increase"></button>
+                </p>
+              </div>
+              </fieldset>
+              <button type="submit" class="modal-button-send main-link">Отправить</button>
+            </form>
+          </section>
+      </div>
     </div>
   </body>
 

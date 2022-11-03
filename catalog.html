@@ -17,9 +17,10 @@
           <h1 class="visually-hidden">Интернет-магазин «Девайс».</h1>
           <a href="index.html" class="main-header-logo-link state-default">
             <img src="images/logos/header-logo.svg" width="145" height="36" alt="Логотип «Девайс».">
+            <span class="visually-hidden">Поиск по сайту.</span>
           </a>
-          <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск">
+          <form class="navigation-search-form flex" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск по сайту">
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="main-header-navigation-list list flex">
@@ -29,7 +30,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z"
-                    fill="#000">
+                    fill="#000"/>
                 </svg>
                 Коля Петухов
               </a>
@@ -39,40 +40,97 @@
               <a href="#" class="main-header-navigation-link state-default flex">
                 <svg class="main-header-navigation-link-login-compare-icon" width="10" height="12" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000">
+                  <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000"/>
                 </svg>
                 Сравнить
               </a>
             </li>
-            <li class="main-header-navigation-item flex">
-              <a href="#" class="main-header-navigation-link state-default flex">
+            <li class="main-header-navigation-item main-header-navigation-item-shopping-cart flex">
+              <a href="#" class="main-header-navigation-link state-default main-header-navigation-item-login-shopping-cart flex">
                 <svg class="main-header-navigation-link-login-shopping-list-icon" width="16" height="14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                    fill="#000">
+                    fill="#000"/>
                 </svg>
                 Корзина
                 <span class="cart-amount">2</span>
               </a>
+              <div class="popover popover-hidden">
+                <div class="popover-cart-item flex">
+                  <a href="#" class="popover-cart-item-link flex state-default">
+                    <img class="popover-cart-item-img" src="images/products/product-amateur.jpg" alt="Товар Любительская селфи-палка.">
+                        Любительская<br>селфи-палка
+                  </a>
+                  <button class="popover-cart-item-close-button state-default">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-item flex">
+                  <a href="#" class="popover-cart-item-link flex state-default">
+                    <img class="popover-cart-item-img" src="images/products/product-professional.jpg" alt="Профессиональная селфи-палка.">
+                      Профессиональная селфи-палка
+                  </a>
+                  <button class="popover-cart-item-close-button state-default">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-price flex">
+                  <p class="popover-cart-price-item">
+                    Товаров: <span class="popover-cart-price-amount">2</span>
+                  </p>
+                  <p class="popover-cart-price-item">
+                    Сумма: <span class="popover-cart-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <div class="popover-open-cart">
+                  <button type="button" class="popover-open-cart-button">Открыть корзину</button>
+                </div>
+              </div>
+
             </li>
           </ul>
           <div class="main-header-page-navigation-menu flex">
-            <a href="catalog.html" class="main-header-page-navigation-button-link state-default flex">Каталог товаров</a>
-            <button class="main-header-page-navigation-button state-default" type="button">
-              <h2 class="visually-hidden">Открыть меню каталога.</h2>
-              <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity=".3" cx="25" cy="25.8" r="24" stroke="#000" stroke-width="2" />
-                <g opacity=".3" clip-path="url(#a)">
-                  <path d="M33 24.8h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" transform="translate(17 17.8)" d="M0 0h16v16H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+            <a href="catalog.html" class="main-header-page-navigation-button-link state-default flex">Каталог
+              товаров</a>
+              <div class="main-header-page-navigation-menu-lists flex">
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item-link-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Моноподы для cелфи
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Фитнес-браслеты
+                    </a>
+                  </li>
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Умные часы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-header-page-navigation-menu-list list flex">
+                  <li class="main-header-page-navigation-menu-list-item">
+                    <a href="#" class="main-header-page-navigation-menu-list-item-link">
+                    Квадрокоптеры
+                    </a>
+                  </li>
+                </ul>
+            </div>
           </div>
           <ul class="main-header-page-navigation-list flex">
             <li class="main-header-page-navigation-item flex">
@@ -107,39 +165,66 @@
             <h2 class="visually-hidden">Список моноподов для селфи с фильтрами.</h2>
             <div class="filter-container">
               <p class="catalog-products-text-filter">Фильтр:</p>
-              <p class="catalog-products-title"><strong>Стоимость</strong></p>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range-slider">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-button toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-button toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                      <label class="range-filer-label range-min">
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                        <span class="visually-hidden">Введите минимальную цену.</span>
+                      </label>
+                      <label class="range-filer-label range-max">
+                        до <input class="range-input" type="number" value="5000" name="max-price">
+                        <span class="visually-hidden">Введите максимальную цену.</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Цвет</legend>
                   <ul class="catalog-filter-list list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="black" checked>
-                        Черный
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="checkbox" name="black" checked>
+                        <span class="control-input-marker"></span>
+                        <span class="control-input-label">Черный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="white" checked>
-                        Белый
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="checkbox" name="white" checked>
+                        <span class="control-input-marker"></span>
+                        <span class="control-input-label">Белый</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="blue">
-                        Синий
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="checkbox" name="blue">
+                        <span class="control-input-marker"></span>
+                        <span class="control-input-label">Синий</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="red">
-                        Красный
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="checkbox" name="red">
+                        <span class="control-input-marker"></span>
+                        <span class="control-input-label">Красный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="pink">
-                        Розовый
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="checkbox" name="pink">
+                        <span class="control-input-marker"></span>
+                        <span class="control-input-label">Розовый</span>
                       </label>
                     </li>
                   </ul>
@@ -148,39 +233,41 @@
                   <legend class="catalog-filter-title">Bluetooth</legend>
                   <ul class="catalog-filter-list list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="true" checked>
-                        Да
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="radio" name="product-group" value="true" checked>
+                        <span class="control-input-checkbox"></span>
+                        <span class="control-input-label">Есть</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="false">
-                        Нет
+                      <label class="control state-default">
+                        <input class="control-input visually-hidden" type="radio" name="product-group" value="false">
+                        <span class="control-input-checkbox"></span>
+                        <span class="control-input-label">Нет</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <button class="catalog-filter-button" type="submit">Показать</button>
+                <button class="catalog-filter-button main-link" type="submit">Показать</button>
               </form>
             </div>
             <div class="catalog-container">
               <div class="sort-container flex">
                 <p class="catalog-products-text-sort">Сортировка:</p>
-                <select class="select-control" aria-label="Сортировка">
+                <select class="select-control state-default" aria-label="Сортировка">
                   <option value="popular">Популярные</option>
                 </select>
                 <div class="sort-item-controls flex">
                   <a href="#" class="sort-control-container flex">
                     <svg class="sort-control-up state-default" width="12" height="10" viewBox="0 0 12 10" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path d="m6 0 5.5 10H.5" fill="#000">
+                      <path d="m6 0 5.5 10H.5" fill="#000"/>
                     </svg>
                   </a>
                   <a href="#" class="sort-control-container flex">
                     <svg class="sort-control-down state-default" width="12" height="10" viewBox="0 0 12 10" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 10 .5 0h11" fill="#000">
+                      <path d="M6 10 .5 0h11" fill="#000"/>
                     </svg>
                   </a>
                 </div>
@@ -253,37 +340,25 @@
               </ul>
               <button class="button-load-more" type="button">Загрузить ещё</button>
               <div class="pagination flex">
-                <button class="pagination-prev pagination-disabled flex" disabled>Назад</button>
+                <a class="pagination-prev pagination-disabled flex">Назад</a>
                 <ul class="pagination-list list flex">
-                  <li class="pagination-item flex">
-                    <button class="pagination-link pagination-current" disabled>
-                      <span class="pagination-link-content">1</span>
-                    </button>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
                   </li>
-                  <li class="pagination-item flex">
-                    <button class="pagination-link">
-                      <span class="pagination-link-content">2</span>
-                    </button>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
                   </li>
-                  <li class="pagination-item flex">
-                    <button class="pagination-link">
-                      <span class="pagination-link-content">3</span>
-                    </button>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
                   </li>
-                  <li class="pagination-item flex">
-                    <button class="pagination-link">
-                      <span class="pagination-link-content">...</span>
-                    </button>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
                   </li>
-                  <li class="pagination-item flex">
-                    <button class="pagination-link">
-                      <span class="pagination-link-content">15</span>
-                    </button>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
                   </li>
                 </ul>
-                <button class="pagination-next pagination-button flex">
-                  <span class="pagination-button-text">Вперёд</span>
-                </button>
+                <a class="pagination-next flex" href="#">Вперёд</a>
               </div>
             </div>
           </div>
@@ -291,7 +366,7 @@
       </main>
       <footer class="main-footer">
         <div class="footer-container">
-          <a href="#" class="footer-logo-link state-default">
+          <a href="index.html" class="footer-logo-link state-default">
             <img src="images/logos/footer-logo.svg" alt="Логотип сайта в подвале страницы." class="footer-logo"
               width="145" height="36">
           </a>
@@ -317,7 +392,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -328,7 +403,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -338,7 +413,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
-                    fill="#444">
+                    fill="#444"/>
                 </svg>
               </a>
             </li>
@@ -347,7 +422,7 @@
             <svg class="htmlacademy-logo" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
-                fill="#FFC700">
+                fill="#FFC700"/>
             </svg>
           </a>
         </div>
