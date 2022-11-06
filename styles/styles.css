@@ -1540,6 +1540,10 @@ body {
   border: 2px solid #000000;
 }
 
+.control-input:disabled + .control-marker {
+  opacity: 0.1;
+}
+
 .range-input {
   width: 40px;
   border: 0;
@@ -1633,8 +1637,11 @@ body {
 .main-footer-list-item-link {
   text-decoration: none;
   color: #ffffff;
-  position: relative;
   transition: color 0.2s, opacity 0.2s;
+}
+
+.footer-list-item-link-active {
+  position: relative;
 }
 
 .product-card-image,
@@ -1846,6 +1853,8 @@ body {
   outline-offset: 4px;
 }
 
+
+
 .main-link:hover::before {
   height: 40px;
 }
@@ -1944,15 +1953,14 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.main-footer-list-item-link::after {
+.footer-list-item-link-active::after {
   content: "";
   background-color: #ffc700;
-  width: 100%;
+  width: 97%;
   height: 2px;
   position: absolute;
   left: 1px;
   bottom: -4px;
-  opacity: 0;
   transition: opacity 0.1s;
 }
 
@@ -2398,4 +2406,35 @@ body {
 
 .page-navigation-link-active:focus-visible {
   outline-offset: 5px;
+}
+
+.control-input:disabled ~ .control-input-label {
+  opacity: 0.1;
+}
+
+.showcase-control-current:disabled {
+  opacity: 0;
+}
+
+.showcase-control:disabled {
+  opacity: 0.1;
+}
+
+.product-showcase-button-prev:disabled, .product-showcase-button-next:disabled {
+  opacity: 0.1;
+}
+
+.search-button:disabled,
+.navigation-search-form-input:disabled,
+.popover-cart-item-close-button:disabled,
+.select-control:disabled {
+  opacity: 0.1;
+}
+
+.popover-open-cart-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscription-button:disabled, .button-load-more:disabled, .modal-input-number-button:disabled, .modal-input:disabled {
+  opacity: 0.3;
 }
