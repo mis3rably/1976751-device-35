@@ -63,7 +63,7 @@
                     <img class="popover-cart-item-img" src="images/products/product-amateur.jpg" alt="Товар Любительская селфи-палка.">
                         Любительская<br>селфи-палка
                   </a>
-                  <button class="popover-cart-item-close-button state-default">
+                  <button class="popover-cart-item-close-button state-default" type="button">
                     <span class="visually-hidden">Удалить товар из корзины.</span>
                   </button>
                 </div>
@@ -72,7 +72,7 @@
                     <img class="popover-cart-item-img" src="images/products/product-professional.jpg" alt="Профессиональная селфи-палка.">
                       Профессиональная селфи-палка
                   </a>
-                  <button class="popover-cart-item-close-button state-default">
+                  <button class="popover-cart-item-close-button state-default" type="button">
                     <span class="visually-hidden">Удалить товар из корзины.</span>
                   </button>
                 </div>
@@ -92,8 +92,8 @@
             </li>
           </ul>
           <div class="main-header-page-navigation-menu flex">
-            <a href="catalog.html" class="main-header-page-navigation-button-link header-menu-closed">Каталог
-              товаров
+            <a href="catalog.html" class="main-header-page-navigation-button-link header-menu-closed">
+              <span class="main-header-page-navigation-button-link-text">Каталог товаров</span>
               <div class="catalog-menu-wrapper">
                 <svg class="main-header-page-navigation-button-icon" width="50" height="51" viewBox="0 0 50 51" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -483,10 +483,10 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container modal-close">
+      <div class="modal-container ">
         <section class="modal-content flex">
           <h2 class="modal-heading">Доставка под заказ</h2>
-          <button class="modal-button-close state-default">
+          <button class="modal-button-close state-default" type="button">
             <span class="visually-hidden">Закрыть модальное окно.</span>
           </button>
           <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
@@ -507,16 +507,16 @@
                 <input type="text" class="modal-input modal-input-order" id="subscribe-order" placeholder="В свободной форме" required>
               </p>
               <div class="field-group field-group-tool-tip flex">
-                <label class="modal-label label-tool-tip">Количество:</label>
+                <label class="modal-label label-tool-tip" tabindex="0">Количество:</label>
                 <p class="modal-tool-tip">
                   Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
                 </p>
                 <p class="modal-input-number-button-container flex">
-                  <button class="modal-input-number-button input-decrease">
+                  <button class="modal-input-number-button input-decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество заказов.</span>
                   </button>
-                  <input type="number" class="modal-input modal-input-number" required>
-                  <button class="modal-input-number-button input-increase">
+                  <input type="number" class="modal-input modal-input-number" required value="1">
+                  <button class="modal-input-number-button input-increase" type="button">
                     <span class="visually-hidden">Увеличить количество заказов.</span>
                   </button>
                 </p>

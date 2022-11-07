@@ -62,7 +62,7 @@ body {
   width: 1160px;
   margin: 20px auto 0;
   background-image: linear-gradient(180deg, #ffffff 20px, #ffe17f 20px);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-container {
@@ -158,7 +158,7 @@ body {
   letter-spacing: 0.2em;
   display: grid;
   max-width: 293px;
-  grid-template-columns: 227px max-content;
+  grid-template-columns: 1fr 50px;
   gap: 16px;
 }
 
@@ -367,7 +367,8 @@ body {
 
 .subscription-text-free {
   color: #444444;
-  width: 160px;
+  max-width: 160px;
+  padding-left: 32px;
   align-items: center;
   justify-content: flex-end;
   background-image: url("../images/green-tick.svg");
@@ -383,7 +384,10 @@ body {
 .main-footer-address {
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  top: -3px;
   font-style: normal;
+  align-self: start;
   width: 239px;
   grid-column: 1 / 2;
 }
@@ -535,8 +539,8 @@ body {
 
 .pagination-item {
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   position: relative;
 }
 
@@ -1185,6 +1189,7 @@ body {
 .main-footer-phone-number {
   width: 174px;
   margin: 0 0 0 auto;
+  text-align: center;
 }
 
 .catalog-products-container {
@@ -1209,17 +1214,15 @@ body {
 }
 
 .pagination-prev {
-  width: 128px;
-  padding: 25px 0;
-  justify-content: center;
-  align-items: center;
+  max-width: 128px;
+  padding: 25px;
+  word-break: break-word;
 }
 
 .pagination-next {
-  width: 141px;
-  padding: 25px 0;
-  justify-content: center;
-  align-items: center;
+  max-width: 141px;
+  padding: 25px;
+  word-break: break-word;
 }
 
 .pagination-next:hover {
@@ -1668,6 +1671,7 @@ body {
 
 .main-footer-list {
   gap: 35px;
+  justify-content: center;
   align-items: center;
   grid-column: 2 / 3;
   align-self: start;
@@ -2285,6 +2289,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0;
+  text-align: center;
 }
 
 .modal-input-number[type=number]::-webkit-inner-spin-button,
@@ -2389,8 +2394,24 @@ body {
   position: relative;
 }
 
+.main-header-page-navigation-button-link-text {
+  max-width: 227px;
+}
+
+.label-tool-tip {
+  pointer-events: auto;
+}
+
 .label-tool-tip:hover + .modal-tool-tip {
   display: block;
+}
+
+.label-tool-tip:focus-visible + .modal-tool-tip {
+  display: block;
+}
+
+.label-tool-tip:focus-visible {
+  outline: none;
 }
 
 .modal-close {
