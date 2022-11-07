@@ -717,7 +717,6 @@ body {
   flex-direction: column;
   position: relative;
   counter-reset: slider-number;
-  z-index: -1;
 }
 
 .login {
@@ -845,8 +844,7 @@ body {
 }
 
 .log-out {
-  width: 56px;
-  height: 30px;
+  max-width: 56px;
   color: #000000;
   opacity: 0.3;
   margin-left: auto;
@@ -1099,7 +1097,7 @@ body {
 }
 
 .advantages-logo-info-container {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   justify-content: center;
   align-items: center;
@@ -1212,14 +1210,14 @@ body {
 
 .pagination-prev {
   width: 128px;
-  height: 71px;
+  padding: 25px 0;
   justify-content: center;
   align-items: center;
 }
 
 .pagination-next {
   width: 141px;
-  height: 71px;
+  padding: 25px 0;
   justify-content: center;
   align-items: center;
 }
