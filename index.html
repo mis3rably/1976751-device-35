@@ -46,14 +46,16 @@
             </li>
             <li class="main-header-navigation-item main-header-navigation-item-shopping-cart flex">
               <a href="#" class="main-header-navigation-link state-default main-header-navigation-item-login-shopping-cart flex">
-                <svg class="main-header-navigation-link-login-shopping-list-icon" width="16" height="14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                    fill="#000"/>
-                </svg>
-                Корзина
-                <span class="cart-amount">2</span>
+                <div class="shopping-cart-wrapper flex">
+                  <svg class="main-header-navigation-link-login-shopping-list-icon" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
+                      fill="#000"/>
+                  </svg>
+                  <span class="cart-amount">2</span>
+                </div>
+                  Корзина
               </a>
               <div class="popover popover-hidden">
                 <div class="popover-cart-item flex">
@@ -90,13 +92,15 @@
             </li>
           </ul>
           <div class="main-header-page-navigation-menu flex">
-            <a href="catalog.html" class="main-header-page-navigation-button-link header-menu-closed flex">Каталог
+            <a href="catalog.html" class="main-header-page-navigation-button-link header-menu-closed">Каталог
               товаров
-              <svg class="main-header-page-navigation-button-icon" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M49 25.8a24 24 0 1 1-48 0 24 24 0 0 1 48 0Z" stroke="#000" stroke-width="2" />
-                <path d="M33 24.8H17v2h16v-2Z" fill="#000" />
-              </svg>
+              <div class="catalog-menu-wrapper">
+                <svg class="main-header-page-navigation-button-icon" width="50" height="51" viewBox="0 0 50 51" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M49 25.8a24 24 0 1 1-48 0 24 24 0 0 1 48 0Z" stroke="#000" stroke-width="2" />
+                  <path d="M33 24.8H17v2h16v-2Z" fill="#000" />
+                </svg>
+              </div>
             </a>
             <div class="main-header-page-navigation-menu-lists flex">
               <ul class="main-header-page-navigation-menu-list list flex">
