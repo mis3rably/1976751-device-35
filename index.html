@@ -143,13 +143,13 @@
           </div>
           <ul class="main-header-page-navigation-list flex">
             <li class="main-header-page-navigation-item flex">
-              <a href="#" class="main-header-page-navigation-link state-default">Доставка</a>
+              <a href="#" class="main-header-page-navigation-link state-default flex">Доставка</a>
             </li>
             <li class="main-header-page-navigation-item flex">
-              <a href="#" class="main-header-page-navigation-link state-default">Гарантия</a>
+              <a href="#" class="main-header-page-navigation-link state-default flex">Гарантия</a>
             </li>
             <li class="main-header-page-navigation-item flex">
-              <a href="#" class="main-header-page-navigation-link state-default">Контакты</a>
+              <a href="#" class="main-header-page-navigation-link state-default flex">Контакты</a>
             </li>
           </ul>
         </div>
@@ -450,7 +450,7 @@
                     d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
                     fill="#444"/>
                 </svg>
-                <span class="visually-hidden">Ссылка на Telegram.</span>
+                <span class="visually-hidden">Ссылка на канал в Telegram.</span>
               </a>
             </li>
             <li class="social-links-list-item flex">
@@ -462,7 +462,7 @@
                     d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
                     fill="#444"/>
                 </svg>
-                <span class="visually-hidden">Ссылка на YouTube.</span>
+                <span class="visually-hidden">Ссылка на канал на YouTube.</span>
               </a>
             </li>
             <li class="social-links-list-item flex">
@@ -473,7 +473,7 @@
                     d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
                     fill="#444"/>
                 </svg>
-                <span class="visually-hidden">Ссылка на Twitter.</span>
+                <span class="visually-hidden">Ссылка на профиль в Twitter.</span>
               </a>
             </li>
           </ul>
@@ -507,17 +507,19 @@
                 <span class="modal-input-user-error-text">Забавный у вас адрес</span>
               </p>
             </fieldset>
-            <fieldset class="modal-fieldset fieldset-order flex">ъ
+            <fieldset class="modal-fieldset fieldset-order flex">
               <legend class="visually-hidden">Перечень товаров и количество.</legend>
               <p class="field-group flex">
                 <label class="modal-label" for="subscribe-order">Что нужно привезти:</label>
                 <input type="text" class="modal-input modal-input-order" id="subscribe-order" placeholder="В свободной форме" name="modal-input-order" required>
               </p>
               <div class="field-group field-group-tool-tip flex">
-                <label class="modal-label label-tool-tip" tabindex="0">Количество:</label>
-                <p class="modal-tool-tip">
+                <label class="modal-label label-tool-tip" tabindex="0">Количество:
+                  <button type="button" class="button-tool-tip" tabindex="-1" aria-labelledby="modal-tool-tip"></button>
+                </label>
+                <span class="modal-tool-tip" id="modal-tool-tip">
                   Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
-                </p>
+                </span>
                 <p class="modal-input-number-button-container flex">
                   <button class="modal-input-number-button input-decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество заказов.</span>
