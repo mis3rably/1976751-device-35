@@ -514,7 +514,8 @@ body {
   line-height: 30px;
   background-color: transparent;
   border: 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   width: 146px;
   padding-left: 1px;
   background-image: url("../images/catalog-select-arrow.svg");
@@ -1278,6 +1279,27 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.pagination-link {
+  color: rgba(68, 68, 68, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
 .pagination-link:hover {
   color: rgba(0, 0, 0, 1);
 }
@@ -1622,7 +1644,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1634,27 +1657,6 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   display: block;
-}
-
-.pagination-link {
-  color: rgba(68, 68, 68, 0.3);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 40px;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  text-align: center;
 }
 
 .pagination-link-content {
@@ -2311,7 +2313,8 @@ body {
 
 .modal-input-number[type="number"]::-webkit-inner-spin-button,
 .modal-input-number[type="number"]::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .modal-input-number-button {
