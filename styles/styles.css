@@ -1214,7 +1214,7 @@ body {
 }
 
 .button-load-more {
-  width: 760px;
+  min-width: calc(100% - 80px);
   height: 55px;
   margin: 44px 40px 44px;
   border: 3px solid #e5e5e5;
@@ -1226,6 +1226,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   transition: border 0.2s;
+  box-sizing: border-box;
 }
 
 .pagination-prev {
@@ -1297,7 +1298,7 @@ body {
   margin-top: 70px;
   padding: 0 40px;
   display: grid;
-  grid-template-columns: repeat(2, 360px);
+  grid-template-columns: repeat(auto-fill, 360px);
   gap: 44px 40px;
 }
 
