@@ -895,7 +895,7 @@ body {
 
 .modal-button-send {
   position: relative;
-  width: 190px;
+  width: 200px;
   border: 0;
   background-color: transparent;
   margin-top: 52px;
@@ -2154,13 +2154,13 @@ body {
 
 .modal-button-close::before,
 .modal-button-close::after {
-  width: 28px;
-  height: 3px;
+  width: 33px;
+  height: 4px;
   background-color: #000000;
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4px;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -2189,7 +2189,7 @@ body {
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 62px 60px;
+  padding: 62px 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -2202,8 +2202,8 @@ body {
 .modal-input-user-error-text {
   font-size: 14px;
   line-height: 20px;
-  color: #ff3d3d;
-  margin-top: 4px;
+  color: #000000;
+  margin-top: 2px;
 }
 
 .modal-input {
@@ -2273,8 +2273,12 @@ body {
   background-image: url("../images/modal-input-email.svg");
 }
 
-.error-border {
+.modal-input-email:invalid {
   border: 2px #ff3d3d solid;
+}
+
+.modal-input-email:invalid + .modal-input-user-error-text {
+  color: #ff3d3d;
 }
 
 .modal-input-order {
@@ -2320,7 +2324,7 @@ body {
 }
 
 .modal-fieldset + .modal-fieldset {
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .input-decrease::before {

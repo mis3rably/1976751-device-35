@@ -174,7 +174,7 @@
             <img class="product-showcase-img" src="images/slider-drone.png" width="560" height="560"
               alt="Фотография товара.">
             <section class="product-showcase-item">
-              <h2 class="product-showcase-heading title">Порхает как бабочка, жалит как пчела!</h2>
+              <h3 class="product-showcase-heading title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="product-showcase-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="product-showcase-link main-link flex" href="#">Подробнее</a>
@@ -195,7 +195,7 @@
             <img class="product-showcase-img" src="images/slider-band.png" width="560" height="560"
               alt="Фотография товара.">
             <section class="product-showcase-item">
-              <h2 class="product-showcase-heading title">Худеем правильно!</h2>
+              <h3 class="product-showcase-heading title">Худеем правильно!</h3>
               <p class="product-showcase-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
               <a class="product-showcase-link main-link flex" href="#">Подробнее</a>
@@ -212,7 +212,7 @@
             <img class="product-showcase-img" src="images/slider-stick.png" width="560" height="560"
               alt="Фотография товара.">
             <section class="product-showcase-item">
-              <h2 class="product-showcase-heading title">Делай селфи, как Бен Стиллер!</h2>
+              <h3 class="product-showcase-heading title">Делай селфи, как Бен Стиллер!</h3>
               <p class="product-showcase-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="product-showcase-link main-link flex" href="#">Подробнее</a>
@@ -483,28 +483,28 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container modal-close">
+      <div class="modal-container">
         <section class="modal-content flex">
           <h2 class="modal-heading">Доставка под заказ</h2>
           <button class="modal-button-close state-default" type="button">
             <span class="visually-hidden">Закрыть модальное окно.</span>
           </button>
-          <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+          <form action="https://echo.htmlacademy.ru/" method="get" class="modal-form">
             <fieldset class="modal-fieldset fieldset-user flex">
               <p class="field-group flex">
                 <label class="modal-label" for="subscribe-user">Ваше имя:</label>
-                <input type="text" class="modal-input modal-input-user" id="subscribe-user" placeholder="Введите имя" required>
+                <input type="text" class="modal-input modal-input-user" id="subscribe-user" placeholder="Введите имя" name="modal-input-user" required>
               </p>
               <p class="field-group flex">
                 <label class="modal-label" for="subscribe-email">Ваш e-mail:</label>
-                <input type="email" class="modal-input modal-input-email error-border" id="subscribe-email" placeholder="Введите почту" required>
+                <input type="email" class="modal-input modal-input-email" id="subscribe-email" placeholder="Введите почту" name="modal-input-email" value="почта" required>
                 <span class="modal-input-user-error-text">Забавный у вас адрес</span>
               </p>
             </fieldset>
             <fieldset class="modal-fieldset fieldset-order flex">
               <p class="field-group flex">
                 <label class="modal-label" for="subscribe-order">Что нужно привезти:</label>
-                <input type="text" class="modal-input modal-input-order" id="subscribe-order" placeholder="В свободной форме" required>
+                <input type="text" class="modal-input modal-input-order" id="subscribe-order" placeholder="В свободной форме" name="modal-input-order" required>
               </p>
               <div class="field-group field-group-tool-tip flex">
                 <label class="modal-label label-tool-tip" tabindex="0">Количество:</label>
@@ -515,7 +515,7 @@
                   <button class="modal-input-number-button input-decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество заказов.</span>
                   </button>
-                  <input type="number" class="modal-input modal-input-number" required value="1">
+                  <input type="number" class="modal-input modal-input-number" name="modal-input-number" required value="1">
                   <button class="modal-input-number-button input-increase" type="button">
                     <span class="visually-hidden">Увеличить количество заказов.</span>
                   </button>
