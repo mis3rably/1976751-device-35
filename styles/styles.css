@@ -135,8 +135,9 @@ body {
   width: 1160px;
   background-color: #ffe17f;
   left: -60px;
-  top: calc(100%);
+  top: 28px;
   padding: 30px 60px;
+  padding-bottom: 51px;
   box-sizing: border-box;
   z-index: -1;
   gap: 60px;
@@ -155,9 +156,13 @@ body {
   position: relative;
 }
 
+.main-header-page-navigation-menu-list:nth-child(3) {
+  padding-left: 10px;
+}
+
 .main-header-page-navigation-menu-list {
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .main-header-page-navigation-button-link {
@@ -1411,8 +1416,8 @@ body {
   position: absolute;
   min-height: 217px;
   width: 320px;
-  right: -86px;
-  top: 41px;
+  right: -77px;
+  top: 37px;
   background-color: #000000;
   z-index: 1;
 }
@@ -1436,12 +1441,6 @@ body {
 
 .popover-cart-item + .popover-cart-item {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.popover-cart-item-img {
-  max-width: 39px;
-  height: auto;
-  object-fit: contain;
 }
 
 .popover-cart-item-text {
@@ -1500,7 +1499,7 @@ body {
 
 .popover-cart-price {
   background-color: #1a1a1a;
-  padding: 10px 20px;
+  padding: 12px 20px;
   justify-content: space-between;
   font-size: 16px;
   line-height: 20px;
@@ -1515,7 +1514,7 @@ body {
   background-color: #000000;
   transform: rotate(45deg);
   top: -5px;
-  right: 50%;
+  right: 48%;
 }
 
 .popover-cart-item-close-button {
@@ -2064,7 +2063,7 @@ body {
 }
 
 .catalog-header {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .button-load-more:hover {
