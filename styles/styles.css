@@ -2240,7 +2240,6 @@ body {
 }
 
 .modal-label {
-  pointer-events: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2369,7 +2368,6 @@ body {
 
 .label-tool-tip {
   position: relative;
-  pointer-events: auto;
 }
 
 .button-tool-tip {
