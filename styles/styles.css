@@ -101,8 +101,8 @@ body {
   list-style-type: none;
   transition: opacity 0.3s;
   justify-content: center;
-  text-align: center;
   max-width: 130px;
+  align-items: center;
 }
 
 .main-header-page-navigation-link,
@@ -117,11 +117,6 @@ body {
   transition: opacity 0.2s;
   align-items: center;
   justify-content: space-between;
-}
-
-.main-header-page-navigation-link {
-  justify-content: center;
-  align-items: center;
 }
 
 .main-header-page-navigation-menu {
@@ -1980,7 +1975,7 @@ body {
   height: 2px;
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: -3px;
   transition: opacity 0.1s;
 }
 
