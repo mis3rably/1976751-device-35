@@ -20,7 +20,9 @@
             <span class="visually-hidden">Поиск по сайту.</span>
           </a>
           <form class="navigation-search-form flex" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск по сайту">
+            <label>
+              <input class="navigation-search-form-input" type="text" name="search-form" placeholder="Поиск по сайту">
+            </label>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="main-header-navigation-list list flex">
@@ -411,7 +413,9 @@
             </div>
             <div class="subscription-item-form flex">
               <form action="https://echo.htmlacademy.ru/" method="post" class="subscription-form flex">
-                <input class="subscription-form-email-input" type="email" name="email" placeholder="Ваш e-mail">
+                <label>
+                  <input class="subscription-form-email-input" type="email" name="email" placeholder="Ваш e-mail">
+                </label>
                 <button class="subscription-button" type="submit">Подписаться</button>
               </form>
               <span class="subscription-text-free flex">Это бесплатно</span>
@@ -525,7 +529,9 @@
                   <button class="modal-input-number-button input-decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество заказов.</span>
                   </button>
-                  <input type="number" class="modal-input modal-input-number" name="modal-input-number" required value="1">
+                  <label>
+                    <input type="number" class="modal-input modal-input-number" name="modal-input-number" required value="1">
+                  </label>
                   <button class="modal-input-number-button input-increase" type="button">
                     <span class="visually-hidden">Увеличить количество заказов.</span>
                   </button>
